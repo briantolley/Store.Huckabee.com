@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{DBDDBC11-7D5A-4068-87BA-4596A1EA71C7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Store.Huckabee.com</RootNamespace>
+    <AssemblyName>Store.Huckabee.com</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Store.Huckabee.com.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <IncludeIisSettings>true</IncludeIisSettings>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Store.Huckabee.com.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CyberSource">
+      <HintPath>libraries\CyberSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="UPSShippingRates, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libraries\UPSShippingRates.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cart.aspx" />
+    <Content Include="Catalog.aspx" />
+    <Content Include="Confirm.aspx" />
+    <Content Include="Images\AddToCartButton.png" />
+    <Content Include="Images\bannerGrabYourGear.jpg" />
+    <Content Include="Images\banner_coupon.png" />
+    <Content Include="Images\banner_ilikemike.png" />
+    <Content Include="Images\ButtonBuyNow.png" />
+    <Content Include="Images\CartItemQtyAndPriceBkgd.png" />
+    <Content Include="Images\CartItemVerticalSeperator.png" />
+    <Content Include="Images\CheckoutButton.png" />
+    <Content Include="Images\DownDarkChevron.png" />
+    <Content Include="Images\HuckabeeBanner1.jpg" />
+    <Content Include="Images\HuckabeeBrandsDefeatTheClintonMachine.png" />
+    <Content Include="Images\HuckabeeBrandsHopeToHigherGround.png" />
+    <Content Include="Images\HuckabeeBrandsHuckabee2016.png" />
+    <Content Include="Images\HuckabeeBrandsILikeMike.png" />
+    <Content Include="Images\HuckabeeBrandsImWithHuck.png" />
+    <Content Include="Images\HuckabeeBrandsMikeHuckabee.png" />
+    <Content Include="Images\HuckabeeBrandsWhyImARepublican.png" />
+    <Content Include="Images\HuckabeeProductBigBluePolo.png" />
+    <Content Include="Images\HuckabeeProductBigWhiteBumper.png" />
+    <Content Include="Images\HuckabeeProductBigBlueHat.png" />
+    <Content Include="Images\HuckabeeProductBigBlueT-Shirt.png" />
+    <Content Include="Images\HuckabeeProductBigButton.png" />
+    <Content Include="Images\HuckabeeProductBigLargeYardSign.png" />
+    <Content Include="Images\HuckabeeProductBigBlueBumper.png" />
+    <Content Include="Images\HuckabeeProductBigWhiteHat.png" />
+    <Content Include="Images\HuckabeeProductBigWhitePolo.png" />
+    <Content Include="Images\HuckabeeProductBigWhiteT-Shirt.png" />
+    <Content Include="Images\HuckabeeProductBigYardSign.png" />
+    <Content Include="Images\HuckabeeProductBlueBumper.png" />
+    <Content Include="Images\HuckabeeProductBlueHat.png" />
+    <Content Include="Images\HuckabeeProductBluePolo.png" />
+    <Content Include="Images\HuckabeeProductBlueT-Shirt.png" />
+    <Content Include="Images\HuckabeeProductButton.png" />
+    <Content Include="Images\HuckabeeProductLargeYardSign.png" />
+    <Content Include="Images\HuckabeeProductPageHeaderSeperator.png" />
+    <Content Include="Images\HuckabeeProductWhiteBumper.png" />
+    <Content Include="Images\HuckabeeProductWhiteHat.png" />
+    <Content Include="Images\HuckabeeProductWhitePolo.png" />
+    <Content Include="Images\HuckabeeProductWhiteT-Shirt.png" />
+    <Content Include="Images\HuckabeeProductYardSign.png" />
+    <Content Include="Images\HuckabeeStoreFooterPaidFor.png" />
+    <Content Include="Images\HuckabeeStoreHeaderButtonCart.png" />
+    <Content Include="Images\HuckabeeStoreHeaderButtonCircle.png" />
+    <Content Include="Images\HuckabeeStoreHeaderButtonHome.png" />
+    <Content Include="Images\HuckabeeStoreHeaderButtonStore.png" />
+    <Content Include="Images\HuckabeeStoreLogo.png" />
+    <Content Include="Images\HuckabeeSubHeaderSeperator.png" />
+    <Content Include="Images\icon.png" />
+    <Content Include="Images\LeftDarkChevron.png" />
+    <Content Include="Images\LeftLightChevron.gif" />
+    <Content Include="Images\Logo_Defeat260-blue.png" />
+    <Content Include="Images\Logo_Defeat260-white.png" />
+    <Content Include="Images\Logo_Hope260-blue.png" />
+    <Content Include="Images\Logo_Hope260-red.png" />
+    <Content Include="Images\Logo_Ilikemike260-blue.png" />
+    <Content Include="Images\Logo_Ilikemike260-red.png" />
+    <Content Include="Images\Logo_ImWithHuck260-blue.png" />
+    <Content Include="Images\Logo_ImWithHuck260-white.png" />
+    <Content Include="Images\Logo_whyrepublican260-blue.png" />
+    <Content Include="Images\ProductImage_Bumper-Blue560X400-ILikeMike.png" />
+    <Content Include="Images\ProductImage_Bumper-Blue560X400-ImwithMike.png" />
+    <Content Include="Images\ProductImage_Bumper-white560X400-ImwithMike.png" />
+    <Content Include="Images\ProductImage_button-red560X400-Ilikemike.png" />
+    <Content Include="Images\ProductImage_Hat-WHITE560X400.png" />
+    <Content Include="Images\ProductImage_large-yard-Blue560X400-Hope.png" />
+    <Content Include="Images\ProductImage_large-yard-Blue560X400-ILikeMike.png" />
+    <Content Include="Images\ProductImage_large-yard-Blue560X400-ImwithMike.png" />
+    <Content Include="Images\ProductImage_large-yard-red560X400-Hope.png" />
+    <Content Include="Images\ProductImage_Polo-Blue560X400.png" />
+    <Content Include="Images\ProductImage_Polo-Navy560X400.png" />
+    <Content Include="Images\ProductImage_small-yard-Blue560X400-Hope.png" />
+    <Content Include="Images\ProductImage_small-yard-Blue560X400-ILikeMike.png" />
+    <Content Include="Images\ProductImage_small-yard-Blue560X400-ImwithHuck.png" />
+    <Content Include="Images\ProductImage_small-yard-Blue560X400-ImwithMike.png" />
+    <Content Include="Images\ProductImage_small-yard-red560X400-Hope.png" />
+    <Content Include="Images\ProductImage_Tshirt-blue560X400-Defeat.png" />
+    <Content Include="Images\ProductImage_Tshirt-Blue560X400-ILikeMike.png" />
+    <Content Include="Images\ProductImage_Tshirt-Blue560X400-ImwithMike.png" />
+    <Content Include="Images\ProductImage_Tshirt-Blue560X400-WhyaReuplican.png" />
+    <Content Include="Images\ProductImage_Tshirt-Blue560X400.png" />
+    <Content Include="Images\ProductImage_Tshirt-Red560X400-ILikeMike.png" />
+    <Content Include="Images\ProductImage_Tshirt-white560X400-Defeat.png" />
+    <Content Include="Images\ProductImage_Tshirt-White560X400-ILikeMike.png" />
+    <Content Include="Images\ProductImage_Tshirt-white560X400-ImwithMike.png" />
+    <Content Include="Images\RightDarkChevron.png" />
+    <Content Include="Images\RightLightChevron.gif" />
+    <Content Include="Images\store_banner-GrabYourGear-drkbkgd.jpg" />
+    <Content Include="Images\store_banner-GrabYourGear.jpg" />
+    <Content Include="Images\store_banner-HikeWithMike-blubkgd.jpg" />
+    <Content Include="Images\store_banner-HikeWithMike-drkbkgd.jpg" />
+    <Content Include="Images\store_banner-HikeWithMike.jpg" />
+    <Content Include="Images\thumbnail-bumper-IlikeMike.png" />
+    <Content Include="Images\thumbnail-bumper-ImwithMike.png" />
+    <Content Include="Images\thumbnail-bumperwhite-ImwithMike.png" />
+    <Content Include="Images\thumbnail-buttonred-ILikeMike.png" />
+    <Content Include="Images\thumbnail-HatWhite.png" />
+    <Content Include="Images\thumbnail-largeyardsignblue-Hope.png" />
+    <Content Include="Images\thumbnail-largeyardsignblue-ILikeMike.png" />
+    <Content Include="Images\thumbnail-largeyardsignblue-ImwithHuck.png" />
+    <Content Include="Images\thumbnail-largeyardsignred-hope.png" />
+    <Content Include="Images\thumbnail-smallyardsignblue-Hope.png" />
+    <Content Include="Images\thumbnail-smallyardsignblue-ILikeMike.png" />
+    <Content Include="Images\thumbnail-smallyardsignblue-ImwithMike.png" />
+    <Content Include="Images\thumbnail-smallyardsignred-hope.png" />
+    <Content Include="Images\thumbnail-Tblue-Defeat.png" />
+    <Content Include="Images\thumbnail-Tblue-ILikeMike.png" />
+    <Content Include="Images\thumbnail-Tblue-ImwithMike.png" />
+    <Content Include="Images\thumbnail-Tblue-WhyaRepublican.png" />
+    <Content Include="Images\thumbnail-Tred-ILikeMike.png" />
+    <Content Include="Images\thumbnail-Twhite-Defeat.png" />
+    <Content Include="Images\thumbnail-Twhite-ILikeMike.png" />
+    <Content Include="Images\thumbnail-Twhite-ImwithMike.png" />
+    <Content Include="Images\TransparentCart.png" />
+    <Content Include="Images\UpDarkChevron.png" />
+    <Content Include="Includes\Footer.aspx" />
+    <Content Include="Includes\Header.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Includes\SideCart.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="Privacy.aspx" />
+    <Content Include="Product.aspx" />
+    <Content Include="Remove.aspx" />
+    <Content Include="Returns.aspx" />
+    <Content Include="Shipping.aspx" />
+    <Content Include="Terms.aspx" />
+    <Content Include="Test.aspx" />
+    <Content Include="Thankyou.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cart.aspx.designer.vb">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.vb">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Catalog.aspx.designer.vb">
+      <DependentUpon>Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog.aspx.vb">
+      <DependentUpon>Catalog.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Confirm.aspx.designer.vb">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirm.aspx.vb">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Includes\Footer.aspx.designer.vb">
+      <DependentUpon>Footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Includes\Footer.aspx.vb">
+      <DependentUpon>Footer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Includes\Header.aspx.designer.vb">
+      <DependentUpon>Header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Includes\Header.aspx.vb">
+      <DependentUpon>Header.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Includes\SideCart.aspx.designer.vb">
+      <DependentUpon>SideCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Includes\SideCart.aspx.vb">
+      <DependentUpon>SideCart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.vb">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.vb">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Privacy.aspx.designer.vb">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Privacy.aspx.vb">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.vb">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.vb">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Remove.aspx.designer.vb">
+      <DependentUpon>Remove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Remove.aspx.vb">
+      <DependentUpon>Remove.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Returns.aspx.designer.vb">
+      <DependentUpon>Returns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Returns.aspx.vb">
+      <DependentUpon>Returns.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Shipping.aspx.designer.vb">
+      <DependentUpon>Shipping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shipping.aspx.vb">
+      <DependentUpon>Shipping.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Terms.aspx.designer.vb">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Terms.aspx.vb">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Thankyou.aspx.designer.vb">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Thankyou.aspx.vb">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\10.0.0.42.pubxml" />
+    <None Include="My Project\PublishProfiles\Huckabee.pubxml" />
+    <None Include="My Project\PublishProfiles\HuckabeeWeb001.pubxml" />
+    <None Include="My Project\PublishProfiles\New Store Server.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53944</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59365/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
